@@ -526,7 +526,8 @@ def main():
     sm = "".join(f"<url><loc>{DOMAIN}{p}</loc><lastmod>{today}</lastmod><priority>{pr}</priority></url>" for p, pr in urls)
     (OUT / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{sm}</urlset>\n', encoding="utf-8")
     (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {DOMAIN}/sitemap.xml\n", encoding="utf-8")
-    print("✓ sitemap.xml, robots.txt")
+    (OUT / "CNAME").write_text("credipension.org\n", encoding="utf-8")
+    print("✓ sitemap.xml, robots.txt, CNAME")
 
 if __name__ == "__main__":
     main()
