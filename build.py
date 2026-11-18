@@ -215,7 +215,6 @@ def b_cta(msg="Hola CrediPensión 👋 Quiero que un asesor revise mi caso sin c
         <strong>Asesoría por WhatsApp</strong>
         <p><span class="live">Respuesta en minutos</span></p>
         <a class="btn btn-wa btn-lg btn-block" href="{wa(msg)}">{icon("whatsapp")} Solicitar asesoría</a>
-        <p style="margin:14px 0 0">o llámanos al <a href="tel:+{WA_NUMBER}"><b>{WA_DISPLAY}</b></a></p>
       </div>
     </div>
   </div>
@@ -363,7 +362,6 @@ def header(active):
     <span class="topbar-item hide-md">{icon("clock")} Lun a Vie · 8am – 6pm</span>
   </div>
   <div class="topbar-r">
-    <a class="topbar-item" href="tel:+{WA_NUMBER}">{icon("phone")} {WA_DISPLAY}</a>
     <span class="social"><a href="{FACEBOOK}" target="_blank" rel="noopener" aria-label="Facebook">{icon("facebook")}</a><a href="{INSTAGRAM}" target="_blank" rel="noopener" aria-label="Instagram">{icon("instagram")}</a></span>
   </div>
 </div></div>
