@@ -1,0 +1,71 @@
+<!--META {
+  "path": "/contacto/",
+  "nav": "contacto",
+  "priority": "0.6",
+  "crumb": "Contacto",
+  "title": "Contacto - CrediPensión | WhatsApp, correo y ubicación en Bucaramanga",
+  "description": "Contacta a CrediPensión para quejas, reclamos, sugerencias o actualización de datos. WhatsApp 310 803 8677 · Centro, Bucaramanga, Santander · Atención digital en toda Colombia."
+} -->
+<section class="page-hero">
+  <div class="container page-hero-grid">
+    <div>
+      <nav class="breadcrumb" aria-label="Ruta"><a href="/">Inicio</a><span>›</span>Contacto</nav>
+      <span class="eyebrow">¿Cómo te ayudamos?</span>
+      <h1>Contacto</h1>
+      <p class="lead">¿Necesitas ayuda con algo diferente a tu solicitud de crédito? Este espacio es exclusivo para:</p>
+      <ul class="chips">
+        <li class="chip">{{i:alert}} Quejas o reclamos</li>
+        <li class="chip">{{i:heart}} Sugerencias sobre el servicio</li>
+        <li class="chip">{{i:info}} Reportes de errores en la web</li>
+        <li class="chip">{{i:refresh}} Actualización o corrección de datos</li>
+      </ul>
+    </div>
+    <aside class="page-hero-side">
+      <strong>{{i:alert}} ¿Buscas un crédito?</strong>
+      <p>Para asesoría personalizada o solicitud de crédito, por favor visita las secciones correspondientes del sitio.</p>
+      <a class="btn btn-wa btn-block" style="margin-top:16px" href="{{wa:Hola CrediPensión 👋 Quiero iniciar una solicitud de crédito.}}">{{i:whatsapp}} Iniciar una solicitud</a>
+    </aside>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-cards">
+      <div class="contact-card reveal"><div class="card-ico g">{{i:whatsapp}}</div><span>WhatsApp</span><strong>{{WA_DISPLAY}}</strong><a class="link" href="{{wa:Hola CrediPensión 👋}}">Escribir ahora →</a></div>
+      <div class="contact-card reveal"><div class="card-ico">{{i:mail}}</div><span>Correo electrónico</span><strong>{{EMAIL}}</strong><a class="link" href="mailto:{{EMAIL}}">Enviar correo →</a></div>
+      <div class="contact-card reveal"><div class="card-ico o">{{i:pin}}</div><span>Ubicación</span><strong>Centro, Bucaramanga, Santander</strong><span style="color:var(--ink-3)">Atención digital en toda Colombia</span></div>
+    </div>
+
+    <div class="split" style="margin-top:72px;align-items:start">
+      <div class="reveal">
+        <span class="eyebrow">Escríbenos</span>
+        <h2>Envíanos tu mensaje</h2>
+        <p class="lead">Completa el formulario y te abriremos WhatsApp con tu mensaje listo para enviar. Te respondemos en horario de atención.</p>
+        <ul class="purpose">
+          <li>{{i:clock}} Lun a Vie · 8am – 6pm</li>
+          <li>{{i:lock}} Tus datos protegidos · Ley 1581</li>
+          <li>{{i:pin}} Atención digital en toda Colombia</li>
+        </ul>
+        <div class="social social-lg">
+          <a href="{{FACEBOOK}}" target="_blank" rel="noopener" aria-label="Facebook de CrediPensión">{{i:facebook}}</a>
+          <a href="{{INSTAGRAM}}" target="_blank" rel="noopener" aria-label="Instagram de CrediPensión">{{i:instagram}}</a>
+          <a href="{{wa}}" aria-label="WhatsApp de CrediPensión">{{i:whatsapp}}</a>
+        </div>
+      </div>
+      <form class="form-card reveal" id="contact-form">
+        <div class="field"><label for="c-nombre">Nombre completo</label><input type="text" id="c-nombre" name="nombre" autocomplete="name" required></div>
+        <div class="field"><label for="c-motivo">Motivo</label>
+          <select id="c-motivo" name="motivo" required>
+            <option>Queja o reclamo</option><option>Sugerencia sobre el servicio</option><option>Reporte de error en la web</option><option>Actualización o corrección de datos</option>
+          </select></div>
+        <div class="field"><label for="c-msg">Mensaje</label><textarea id="c-msg" name="mensaje" rows="5" required></textarea></div>
+        <p class="disclaimer">Al enviar aceptas nuestra <a href="/politicas-de-privacidad-y-tratamiento-de-datos/">Política de Privacidad y Tratamiento de Datos</a>.</p>
+        <button class="btn btn-wa btn-lg btn-block" type="submit">{{i:whatsapp}} Enviar por WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="disclaimer-bar"><div class="container">{{i:info}} <span>{{DISCLAIMER}}</span></div></div>
+
+{{block:cta}}

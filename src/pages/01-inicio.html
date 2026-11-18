@@ -1,0 +1,91 @@
+<!--META {
+  "path": "/",
+  "nav": "inicio",
+  "priority": "1.0",
+  "title": "CrediPensión | Créditos para Pensionados en Colombia y Bucaramanga",
+  "description": "Asesoría gratuita en crédito por libranza para pensionados en Bucaramanga y toda Colombia. Sin codeudor, cuotas fijas, compra de cartera y atención por WhatsApp. Simula tu cuota.",
+  "faq": "inicio",
+  "service": "Asesoría en crédito por libranza para pensionados",
+  "preload": "/assets/video/credipension-poster.webp"
+} -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Acompañamiento en toda Colombia</span>
+        <h1>Asesoría en crédito por libranza <span class="hl-o">para pensionados</span></h1>
+        <p class="lead">Te acompañamos en toda Colombia para gestionar tu crédito por libranza de forma clara, segura y sin costo. Comparamos opciones según tu entidad de pensión para que decidas con confianza.</p>
+        <ul class="chips">
+          <li class="chip">{{i:check-circle}} Sin codeudor</li>
+          <li class="chip">{{i:check-circle}} Cuotas fijas</li>
+          <li class="chip">{{i:check-circle}} Compra de cartera si aplica</li>
+          <li class="chip">{{i:check-circle}} Atención personalizada</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-wa btn-lg" href="{{wa:Hola CrediPensión 👋 Quiero iniciar mi asesoría gratis.}}">{{i:whatsapp}} Iniciar asesoría gratis</a>
+          <a class="btn btn-ghost btn-lg" href="#simulador">{{i:calc}} Simular mi cuota</a>
+        </div>
+        <div class="hero-trust">
+          <div class="avatars" aria-hidden="true"><span style="background:#22599b">{{i:shield}}</span><span style="background:#f7944b">{{i:lock}}</span><span style="background:#1faf54">{{i:check}}</span></div>
+          <span><b>Sin anticipos</b> · Tus datos protegidos · Ley 1581</span>
+        </div>
+      </div>
+      <div class="hero-media">
+        <div class="hero-photo hero-video">
+          <video id="hero-video" autoplay muted loop playsinline preload="metadata" poster="/assets/video/credipension-poster.webp" aria-label="Video de presentación de CrediPensión">
+            <source src="/assets/video/credipension.mp4" type="video/mp4">
+          </video>
+          <button class="video-sound" type="button" aria-pressed="false" aria-label="Activar sonido del video"><span class="vs-off">🔇 Activar sonido</span><span class="vs-on">🔊 Silenciar</span></button>
+        </div>
+        <div class="float-card fc-2"><span class="fc-ico green">{{i:whatsapp}}</span><span><strong>Asesoría por WhatsApp</strong>Respuesta en minutos</span></div>
+        <div class="float-card fc-1"><span class="fc-ico orange">{{i:gift}}</span><span><strong><span class="fc-mob">Asesoría </span>100% gratuita</strong><span class="fc-sub">Sin costo y sin compromiso</span></span></div>
+      </div>
+    </div>
+    {{block:notice}}
+  </div>
+</section>
+
+<div class="disclaimer-bar"><div class="container">{{i:info}} <span>{{DISCLAIMER}}</span></div></div>
+
+{{block:logos}}
+
+<section class="section" id="quienes-somos">
+  <div class="container split">
+    <div class="split-media reveal">
+      <img src="/assets/img/fotos/hero-pareja.webp" alt="Pareja de pensionados sonriendo en casa" width="1400" height="788" loading="lazy">
+      <div class="badge">Asesoría gratuita<small>Sin costo y sin compromiso</small></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Quiénes somos</span>
+      <h2>¿Qué es CrediPensión?</h2>
+      <p class="lead">CrediPensión es un canal digital de asesoría gratuita para pensionados en Colombia. No somos una entidad financiera: te orientamos y acompañamos para gestionar tu crédito por libranza de forma clara y segura, para que tomes la mejor decisión sin costo y sin compromiso.</p>
+      <ul class="checklist">
+        <li>{{i:check-circle}} Comparamos opciones según tu entidad de pensión</li>
+        <li>{{i:check-circle}} Un asesor real te acompaña en cada paso</li>
+        <li>{{i:check-circle}} Nunca pedimos pagos por adelantado</li>
+      </ul>
+      <div class="cta-row" style="margin-top:30px"><a class="btn btn-wa" href="{{wa:Hola CrediPensión 👋 Quiero saber más sobre la asesoría.}}">{{i:whatsapp}} Hablar con un asesor</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-soft" id="como-te-ayudamos">
+  <div class="container">
+    <div class="section-head reveal"><span class="eyebrow">Cómo te ayudamos</span><h2>Todo lo que necesitas en un solo lugar</h2><p>Todo en línea, sin filas ni desplazamientos.</p></div>
+    <div class="grid g-3">
+      <a class="card reveal" href="/creditos-para-pensionados-en-colombia/"><div class="card-ico">{{i:wallet}}</div><h3>Créditos para pensionados</h3><p>Conoce cómo funciona el crédito por libranza, sus condiciones y beneficios.</p><span class="more">Ver más {{i:arrow}}</span></a>
+      <a class="card reveal" href="/convenios/"><div class="card-ico o">{{i:handshake}}</div><h3>Convenios y pagadurías</h3><p>Revisa las entidades de pensión con las que trabajamos en toda Colombia.</p><span class="more">Ver más {{i:arrow}}</span></a>
+      <a class="card reveal" href="/requisitos/"><div class="card-ico g">{{i:clipboard}}</div><h3>Requisitos</h3><p>Descubre qué necesitas para solicitar tu crédito según tu tipo de pensión.</p><span class="more">Ver más {{i:arrow}}</span></a>
+    </div>
+  </div>
+</section>
+
+{{block:steps}}
+
+{{block:sim}}
+
+{{block:why}}
+
+{{block:cta}}
+
+{{faq:inicio}}
